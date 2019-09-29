@@ -5,7 +5,7 @@
 
 # Santtu "MFG38" Pesonen, 2019-09-29
 
-print "How many answer does your code have?"
+print "How many lines does your code have?"
 answer = raw_input("Insert number here: ")
 answer = int(answer)
 
