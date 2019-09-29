@@ -10,14 +10,14 @@ answer = raw_input("Insert number here: ")
 answer = int(answer)
 
 if answer <= 200:
-    code_evaluator = "Eh, I've seen more complex code."
+    code_evaluator = "? Eh, I've seen more complex code."
 elif answer > 200 and answer <= 500:
-    code_evaluator = "Could be worse. A lot worse."
+    code_evaluator = "? Could be worse. A lot worse."
 elif answer > 500 and answer <= 1000:
-    code_evaluator = "That's a lotta code, alright."
+    code_evaluator = "? That's a lotta code, alright."
 elif answer > 1000 and answer <= 2000:
-    code_evaluator = "You sure you can't do with any less?"
+    code_evaluator = "? You sure you can't do with any less?"
 else:
-    code_evaluator = "Sweet Jesus, what have you done?!"
+    code_evaluator = "? Sweet Jesus, what have you done?!"
         
-print code_evaluator
+print str(answer) + code_evaluator
