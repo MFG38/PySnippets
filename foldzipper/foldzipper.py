@@ -15,4 +15,4 @@ def pack_folder(src,dest):
                 if os.path.isfile(filename):
                     arcname = os.path.join(os.path.relpath(root,relroot),file)
                     zip.write(arcname,filename)
-        zip.close()
+    zip.close()
