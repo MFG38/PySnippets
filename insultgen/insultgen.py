@@ -1,6 +1,6 @@
 # Generates a random insult from a pre-determined
 # selection of words and phrases.
-# Current number of possible combinations: 432.
+# Current number of possible combinations: 960.
 # Written in Notepad++, tested with Python 2.7.16
 # running through the Windows command line.
 
@@ -17,7 +17,10 @@ adj = [
     "juvenile ",
     "ball-shaped ",
     "incandescent ",
-    "hollow-skulled "]
+    "hollow-skulled ",
+    "braindead ",
+    "bone-headed ",
+    "gelatinous "]
 
 noun = [
     "pile ",
@@ -25,7 +28,9 @@ noun = [
     "piece ",
     "tub ",
     "truckload ",
-    "bottle "]
+    "bottle ",
+    "sphere ",
+    "heap "]
 
 thing = [
     "excrement",
@@ -35,7 +40,9 @@ thing = [
     "rotten flesh",
     "lard",
     "Satan's semen",
-    "pubic hair"]
+    "pubic hair",
+    "yesterday's lunch",
+    "trash"]
 
 #def geninsult():
 adjindex = random.randint(0,len(adj)-1)
