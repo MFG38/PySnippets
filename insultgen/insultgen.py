@@ -45,9 +45,9 @@ thing = [
     "trash"]
 
 #def geninsult():
-adjindex = random.randint(0,len(adj)-1)
-nounindex = random.randint(0,len(noun)-1)
-thingindex = random.randint(0,len(thing)-1)
+#adjindex = random.randint(0,len(adj)-1)
+#nounindex = random.randint(0,len(noun)-1)
+#thingindex = random.randint(0,len(thing)-1)
     
-insult = str(adj[adjindex]) + str(noun[nounindex]) + "of " + str(thing[thingindex])
+insult = random.choice(adj) + random.choice(noun) + "of " + random.choice(thing)
 print "Here's your insult, you " + insult + "."
