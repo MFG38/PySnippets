@@ -1,35 +1,27 @@
-# (UNFINISHED) Generates a random password that's 8-32 characters in length.
+# Generates a random password that's 8-32 characters in length.
+# Written in Notepad++, tested with Python 2.7.16 running
+# through the Windows command line.
+
+# Santtu "MFG38" Pesonen, 2020-07-24
 
 import random
+import string
 #import itertools
 
-chars = [
-    # Upper-case letters
-    "A", "B", "C", "D", "E", "F", "G", "H", "I",
-    "J", "K", "L", "M", "N", "O", "P", "Q", "R",
-    "S", "T", "U", "V", "W", "X", "Y", "Z",
-    # Lower-case letters
-    "a", "b", "c", "d", "e", "f", "g", "h", "i",
-    "j", "k", "l", "m", "n", "o", "p", "q", "r",
-    "s", "t", "u", "v", "w", "x", "y", "z",
-    # Numbers
-    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+chars = string.ascii_letters + string.digits
 
-generatedList = []
-generatedPW = ""
+#generatedList = []
+#generatedPW = ""
 
 minLength = 8
-maxLength = 32
+maxLength = 33      # 32 + 1, just so that max length doesn't cap at 31.
 
 def genPassword(length):
     if length not in range(minLength,maxLength):
         print "Can't generate password: length is out of bounds!"
     else:
-        for i in xrange(length):
-            generatedList.append(random.choice(chars))
-        generatedPW = "".join(generatedList)
-        return generatedPW
+        generatedPW = ''.join((random.choice(chars) for i in range(length)))
+        print "Your password is: " + generatedPW
 
 passLength = int(raw_input("Enter desired length of password (8-32 characters): "))
 genPassword(passLength)
-print "Your password is: " + generatedPW
