@@ -6,12 +6,8 @@
 
 import random
 import string
-#import itertools
 
 chars = string.ascii_letters + string.digits
-
-#generatedList = []
-#generatedPW = ""
 
 minLength = 8
 maxLength = 33      # 32 + 1, just so that max length doesn't cap at 31.

@@ -7,7 +7,6 @@
 
 print "How many lines does your code have?"
 answer = int(raw_input("Insert number here: "))
-#answer = int(answer)
 
 if answer <= 200:
     code_evaluator = "? Eh, I've seen more complex code."

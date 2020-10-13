@@ -46,11 +46,6 @@ thing = [
     "yesterday's lunch",
     "trash",
     "fossilized dung"]
-
-#def geninsult():
-#adjindex = random.randint(0,len(adj)-1)
-#nounindex = random.randint(0,len(noun)-1)
-#thingindex = random.randint(0,len(thing)-1)
     
 insult = random.choice(adj) + random.choice(noun) + "of " + random.choice(thing)
 print "Here's your insult, you " + insult + "."
