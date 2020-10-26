@@ -1,6 +1,6 @@
 # Generates a random insult from a pre-determined
 # selection of words and phrases.
-# Current number of possible combinations: 1,320.
+# Current number of possible combinations: 2,592.
 # Written in Notepad++, tested with Python 2.7.16
 # running through the Windows command line.
 
@@ -23,7 +23,10 @@ adj = [
     "gelatinous ",
     "mindless ",
     "thoughtless ",
-    "idiotic "]
+    "idiotic ",
+    "dense ",
+    "vapid ",
+    "witless "]
 
 noun = [
     "pile ",
@@ -33,7 +36,11 @@ noun = [
     "truckload ",
     "bottle ",
     "sphere ",
-    "heap "]
+    "heap ",
+    "glob ",
+    "clump ",
+    "wad ",
+    "hunk "]
 
 thing = [
     "excrement",
@@ -46,7 +53,8 @@ thing = [
     "pubic hair",
     "yesterday's lunch",
     "trash",
-    "fossilized dung"]
+    "fossilized dung",
+    "roadkill skunks"]
     
 insult = random.choice(adj) + random.choice(noun) + "of " + random.choice(thing)
 print "Here's your insult, you " + insult + "."
