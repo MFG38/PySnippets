@@ -1,6 +1,6 @@
 # Generates a random insult from a pre-determined
 # selection of words and phrases.
-# Current number of possible combinations: 1,232.
+# Current number of possible combinations: 1,320.
 # Written in Notepad++, tested with Python 2.7.16
 # running through the Windows command line.
 
@@ -22,7 +22,8 @@ adj = [
     "bone-headed ",
     "gelatinous ",
     "mindless ",
-    "thoughtless "]
+    "thoughtless ",
+    "idiotic "]
 
 noun = [
     "pile ",
